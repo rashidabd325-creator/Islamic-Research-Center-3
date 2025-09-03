@@ -1,36 +1,9 @@
-body.dark-mode {
-  background: #121212;
-  color: #e0e0e0;
-}
-
-body.dark-mode .header {
-  background: #1c1c1c;
-}
-
-body.dark-mode .service-card,
-body.dark-mode .dua-card,
-body.dark-mode .contact,
-body.dark-mode .hero {
-  background: #1e1e1e;
-  color: #e0e0e0;
-  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
-}
-
-body.dark-mode .prayer-table th {
-  background: #333;
-}
-
-.theme-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: var(--accent);
-  border: none;
-  padding: 8px 12px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1.2rem;
-}
+// Dark Mode Toggle
+const themeToggle = document.getElementById('theme-toggle');
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  themeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+});
 
 // Footer Year
 document.getElementById('year').textContent = new Date().getFullYear();
@@ -117,4 +90,5 @@ loadHijriDate();
 loadPrayerTimes();
 loadDuas();
 setupDuaSearch();
+
 
