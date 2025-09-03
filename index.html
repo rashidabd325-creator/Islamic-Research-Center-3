@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Islamic Research Center</title>
+  <meta name="description" content="Researching Islam, Inspiring Lives — ইসলামের গবেষণা, জীবনের অনুপ্রেরণা">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+  <div class="container header-content">
+    <img src="assets/img/logo.png" alt="Islamic Research Center Logo" class="logo">
+    <div>
+      <h1>Islamic Research Center</h1>
+      <p class="tagline">Researching Islam, Inspiring Lives</p>
+    </div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero container">
+  <blockquote class="quote" dir="rtl" lang="ar">رَّبِّ زِدْنِي عِلْمًا</blockquote>
+  <p class="quote-meaning">হে আমার পালনকর্তা, আমার জ্ঞান বৃদ্ধি করুন</p>
+  <p class="bio">ইসলামিক রিসার্চ ও দাওয়াহর মাধ্যমে সমাজে সঠিক জ্ঞান ছড়িয়ে দেওয়া আমার উদ্দেশ্য।</p>
+  <p id="hijri-date" class="hijri-date">আজকের হিজরি তারিখ: লোড হচ্ছে...</p>
+</section>
+
+<!-- Services -->
+<section class="services container">
+  <h2>আমাদের সেবা</h2>
+  <div class="service-grid">
+    <div class="service-card">
+      <h3>📖 কুরআন শিক্ষা ও তাফসীর</h3>
+      <p>সহজ ও নির্ভরযোগ্য ব্যাখ্যার মাধ্যমে কুরআন শেখা এবং জীবনে প্রয়োগের দিকনির্দেশনা।</p>
+    </div>
+    <div class="service-card">
+      <h3>📚 হাদীস ও ইসলামিক গবেষণা</h3>
+      <p>সহীহ হাদীস, ইসলামিক ফিকহ ও সমসাময়িক বিষয়ে গবেষণা এবং বিশ্লেষণ।</p>
+    </div>
+    <div class="service-card">
+      <h3>🛠 ইসলামিক অ্যাপ ও টুলস</h3>
+      <p>নামাজের সময়সূচি, কিবলা ফাইন্ডার, দোয়া কালেকশন ও ইসলামিক ক্যালেন্ডারসহ আধুনিক টুলস।</p>
+    </div>
+    <div class="service-card">
+      <h3>📖 ই-লাইব্রেরি ও রিসোর্স</h3>
+      <p>ইসলামিক বই, প্রবন্ধ, আর্টিকেল ও গবেষণাপত্রের ডিজিটাল কালেকশন।</p>
+    </div>
+    <div class="service-card">
+      <h3>💬 প্রশ্নোত্তর ও দাওয়াহ সেবা</h3>
+      <p>সমসাময়িক সমস্যার কুরআন-সুন্নাহ ভিত্তিক সমাধান ও ইসলামী দাওয়াহ কার্যক্রম।</p>
+    </div>
+  </div>
+</section>
+
+<!-- Dua Collection -->
+<section class="dua-section container">
+  <h2>📖 দোয়া কালেকশন</h2>
+  <input type="text" id="search" placeholder="দোয়া খুঁজুন..." class="search-box">
+  <div id="dua-list"></div>
+</section>
+
+<!-- Prayer Times -->
+<section class="prayer-section container">
+  <h2>🕌 নামাজের সময়সূচি</h2>
+  <table class="prayer-table">
+    <thead>
+      <tr>
+        <th>তারিখ</th>
+        <th>ফজর</th>
+        <th>যোহর</th>
+        <th>আসর</th>
+        <th>মাগরিব</th>
+        <th>ইশা</th>
+      </tr>
+    </thead>
+    <tbody id="prayer-times"></tbody>
+  </table>
+</section>
+
+<!-- Contact -->
+<section class="contact container">
+  <h2>যোগাযোগ</h2>
+  <p>📧 ইমেইল: <a href="mailto:rashidabd325@gmail.com">rashidabd325@gmail.com</a></p>
+  <p>📱 WhatsApp/ফোন: <em>আপনার নম্বর দিন</em></p>
+  <p>🌐 Facebook: <a href="https://www.facebook.com/samiul325" target="_blank">facebook.com/samiul325</a></p>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>© <span id="year"></span> Islamic Research Center — হালাল, সহিহ, উপকারী</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
