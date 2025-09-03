@@ -4,7 +4,15 @@ themeToggle.addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
   themeToggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
 });
-
+// Voice Support for Duas
+document.addEventListener('click', function (e) {
+  if (e.target.classList.contains('play-audio')) {
+    const text = e.target.getAttribute('data-text');
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'bn-BD';
+    speechSynthesis.speak(utterance);
+  }
+});
 // Footer Year
 document.getElementById('year').textContent = new Date().getFullYear();
 
@@ -90,5 +98,6 @@ loadHijriDate();
 loadPrayerTimes();
 loadDuas();
 setupDuaSearch();
+
 
 
